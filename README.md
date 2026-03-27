@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git-sync
-        uses: valtech-sd/git-sync@v9
+        uses: GiganticPlayground/git-sync@v9
         with:
           source_repo: "git@github.com:source-org/source-repo.git"
           source_branch: "${{ github.event.ref }}"
@@ -131,7 +131,7 @@ Original Author:
 [Wei He](https://github.com/wei) _github@weispot.com_
 
 Fork Author:
-[Valtech SD](https://github.com/valtech-sd) _us.san_diego_engineering@valtech.com_
+[GiganticPlayground](https://github.com/GiganticPlayground)
 
 ## License
 

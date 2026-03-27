@@ -35,7 +35,7 @@ GitHub actions are actually containers that are instantiated when certain events
 
 The git-sync action we discuss here starts up an Ubuntu container with git and git-lfs installed. It then checks out a specific pushed **ref**, including all GIT LFS items, then pushes this same **ref** to the destination, including all GIT LFS items. 
 
-The full source code of this action is available at: https://github.com/valtech-sd/git-sync. However, this action is also published in the GitHub Actions marketplace, so you do not need to do anything with the source if you're only interested in using this.
+The full source code of this action is available at: https://github.com/GiganticPlayground/git-sync. However, this action is also published in the GitHub Actions marketplace, so you do not need to do anything with the source if you're only interested in using this.
 
 ## SOURCE REPO Preparation
 
@@ -59,7 +59,7 @@ The full source code of this action is available at: https://github.com/valtech-
         runs-on: ubuntu-latest
         steps:
           - name: git-sync
-            uses: valtech-sd/git-sync@v9
+            uses: GiganticPlayground/git-sync@v9
             with:
               source_repo: “git@github.com:Some_User_or_Org/some-source-repo.git”
               source_branch: “${{ github.event.ref }}”
